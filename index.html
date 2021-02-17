@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>EquationPOS Documentation</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!-- <img class="img-fluid" src="img/logo.png" alt=""> -->
+                <h3>Equation POS</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Get started</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#installing">Installing equationPOS</a>
+                        </li>
+                        <li>
+                            <a href="#">[Troubleshooting ERROR] Invalid license</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Product Manager</a>
+                    <ul class="collapse list-unstyled" id="productSubmenu">
+                        <li>
+                            <a href="#">Add product</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit product</a>
+                        </li>
+                        <li>
+                            <a href="#">Suspend product</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete product</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#purchaseSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Purchases</a>
+                    <ul class="collapse list-unstyled" id="purchaseSubmenu">
+                        <li>
+                            <a href="#">Add purchase</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit purchase</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete product</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Recived order</a>
+                </li>
+                <li>
+                    <a href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Payments</a>
+                    <ul class="collapse list-unstyled" id="paymentSubmenu">
+                        <li>
+                            <a href="#">Add payment</a>
+                        </li>
+                        <li>
+                            <a href="#">View payment</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#SalesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Sales / Sell (POS)</a>
+                    <ul class="collapse list-unstyled" id="SalesSubmenu">
+                        <li>
+                            <a href="#">Pos(Add sale)</a>
+                        </li>
+                        <li>
+                            <a href="#">View sale</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit sale</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete sale</a>
+                        </li>
+                        <li>
+                            <a href="#">Add sell return</a>
+                        </li>
+                        <li>
+                            <a href="#">View & delete sale return</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#SupplierReturnSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Supplier return</a>
+                    <ul class="collapse list-unstyled" id="SupplierReturnSubmenu">
+                        <li>
+                            <a href="#">Add supplier return</a>
+                        </li>
+                        <li>
+                            <a href="#">View & Delete supplier return</a>
+                        </li>
+                        <li>
+                            <a href="#"> supplier return</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Reports</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div id="installing">
+                <h2>Installing equationPOS</h2>
+                <h2 class="font-weight-bold mt-4">Server requirements</h2>
+                <p class="lead mt-4">Make sure your server meets the following requirements:</p>
+                <ol class="installation-requirements">
+                    <li>PHP >= 7.2</li>
+                    <li>OpenSSL PHP Extension</li>
+                    <li>PDO PHP Extension</li>
+                    <li>Mbstring PHP Extension</li>
+                    <li>Tokenizer PHP Extension</li>
+                    <li>XML PHP Extension</li>
+                    <li>cURL PHP Extension</li>
+                    <li>Zip PHP Extension</li>
+                    <li>GD PHP Extension</li>
+                </ol>
+
+                <div class="line"></div>
+
+                <h2>Server Recommendation</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
