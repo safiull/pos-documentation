@@ -51,7 +51,7 @@
                     <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Product Manager</a>
                     <ul class="collapse list-unstyled" id="productSubmenu">
                         <li>
-                            <a href="#">Add product</a>
+                            <a href="#product-manager">Add product</a>
                         </li>
                         <li>
                             <a href="#">Edit product</a>
@@ -62,13 +62,33 @@
                         <li>
                             <a href="#">Delete product</a>
                         </li>
+                        <li>
+                            <a href="#">Print labels</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#unitSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Unit Manager</a>
+                    <ul class="collapse list-unstyled" id="unitSubmenu">
+                        <li>
+                            <a href="#unit-manager">Add unit</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit unit</a>
+                        </li>
+                        <li>
+                            <a href="#">Suspend unit</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete unit</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
                     <a href="#purchaseSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Purchases</a>
                     <ul class="collapse list-unstyled" id="purchaseSubmenu">
                         <li>
-                            <a href="#">Add purchase</a>
+                            <a href="#purchase">Add purchase</a>
                         </li>
                         <li>
                             <a href="#">Edit purchase</a>
@@ -131,6 +151,9 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Reports</a>
+                </li>
+                <li>
+                    <a href="#support"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Support</a>
                 </li>
             </ul>
         </nav>
@@ -232,6 +255,8 @@
                 <div class="line"></div>
             </div>
 
+            <div class="line"></div>
+            <div class="line"></div>
             <!-- Product Manager Part -->
 
             <section id="product-manager">
@@ -330,12 +355,34 @@
 
                 <h5 class="mt-5">Step 02: Click on -> Create new product.</h5>
             </section>
+
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <!-- Unit Manager Part -->
+
+            <section id="unit-manager">
+                <h2>Unit Manager</h2>
+                <h4 class="mt-5">Add New Unit</h4>
+                <h6 class="font-weight-bold mt-4">How to add a new unit ? <span style="font-size: 30px;">&#128530;</span></h6>
+                <h5 class="mt-5">Step 01: Go to – Settings > Unit</h5>
+                <p class="lead">Then you can see this page.</p>
+                <img src="assets/img/add-product/page.jpg" class="img-fluid border border-primary mt-4" alt="">
+                
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/product-name.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>1) Add Product Name:</strong> Add Product Name in this field. This field is required. The Product Name field must be at least 3 characters.</p>
+                </div>
+
+                <h5 class="mt-5">Step 02: Click on -> Create new product.</h5>
+            </section> 
+
             <div class="line"></div>
             <div class="line"></div>
 
             <!-- Purchase -->
 
-            <section id="product-manager">
+            <section id="purchase">
                 <h2>Purchase</h2>
                 <h4 class="mt-5">Add New Purchase</h4>
                 <h6 class="font-weight-bold mt-4">How to add a new purchase order? <span style='font-size:30px;'>&#129300;</span></h6>
@@ -406,13 +453,14 @@
                     <h5 class="mt-5">Step 02: Click on -> Create order.</h5>
                 </div>
             </section>
+
             <div class="line"></div>
             <div class="line"></div>
             <section id="addPayment">
                 <h3>Add Payment</h3>
         
                 <div class="image-group">
-                    <p>How to Add Payment ?</p>
+                    <h5 class="mt-3">How to Add Payment ?</h5>
                     <img src="assets/img/add-payment/1.jpg" class="img-fluid border border-primary mt-4" alt=""><br><br>
                     <p>To Add Payment go to "Purchase Orders" page. Only DUE and PartiallyPaid payment status orders can Add Payment. Then click View/Edit option from Action dropdown.</p>
                 </div>
@@ -492,22 +540,22 @@
                 <div class="image-group">
                     <h5>How to Add Sell return ?</h5>
                     <img src="assets/img/sell-return/sell-return.png" class="img-fluid border border-primary" alt=""><br><br>
-                    <p>Click-> &#128129; Add New Sell Return + | if you want to add sell return.</p>
+                    <p class="lead">Click-> &#128129; Add New Sell Return + | if you want to add sell return.</p>
                 </div>
         
                 <div class="image-group">
-                    <p> After clicked you can see this window.</p>
+                    <p class="lead"> After clicked you can see this window.</p>
                     <img src="assets/img/sell-return/add-sell-return.png" class="img-fluid border border-primary" alt=""><br><br>
                 </div>
                 
                 <div class="image-group">
-                    <p><b>1)</b> Invoice no:</p>
+                    <h5><b>1)</b> Invoice no:</h5>
                     <img src="assets/img/sell-return/show-invoice.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">Put a Invoice Number in this field and click-> &#128129; show invoice.</p>
                 </div>
                 
                 <div class="image-group">
-                    <p><b>2)</b> Sell lists:</p>
+                    <h5><b>2)</b> Sell lists:</h5>
                     <img src="assets/img/sell-return/sell-list.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">After clicked on Show invoice, you can see sells list.</p>
                     <p class="lead">Click on (+) or (-) button for how many item/s do you want to return.</p>
@@ -516,13 +564,13 @@
                 </div>
                 
                 <div class="image-group">
-                    <p><b>3)</b> Sell returns list:</p>
+                    <h5><b>3)</b> Sell returns list:</h5>
                     <img src="assets/img/sell-return/sell-return-list.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">After clicked on Submit button, you can see this sell returns item in sell return list on top position.</p>
                 </div>
         
                 <div class="image-group">
-                    <p><b>4)</b> Delete or view:</p>
+                    <h5><b>4)</b> Delete or view:</h5>
                     <img src="assets/img/sell-return/action-btn.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">You can delete or view sell return item from the action button.</p>
                 </div>
@@ -534,12 +582,11 @@
             <!-- Add supplier return  -->
 
             <section id="addSupplierReturn">
-                <div class="page-header"><h3>Add supplier return</h3><hr class="notop"></div>
-        
+                <h3>Add supplier return</h3>
                 <div class="image-group">
-                    <p class="title">How to Add Supplier return</p>
+                    <p>How to Add Supplier return</p>
                     <img src="assets/img/supplier-return/add-new-supplier.png" class="img-fluid border border-primary" alt=""><br><br>
-                    <p>Click-> &#128129; Add New Supplier Return + | if you want to add supplier return.</p>
+                    <p class="lead">Click-> &#128129; Add New Supplier Return + | if you want to add supplier return.</p>
                 </div>
         
                 <div class="image-group">
@@ -548,21 +595,20 @@
                 </div>
                 
                 <div class="image-group">
-                    <p><b>1)</b> Supplier name:</p>
+                    <h5><b>1)</b> Supplier name:</h5>
                     <img src="assets/img/supplier-return/supplier-name.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">Select Supplier Name from this field. This field is required. Only Products which are added under this supplier will be shown in "Product name" field.</p>
                 </div>
         
                 <div class="image-group">
-                    <p><b>2)</b> Product name:</p>
+                    <h5><b>2)</b> Product name:</h5>
                     <img src="assets/img/supplier-return/product-name.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">Add Products from selected supplier in this field. This field is required.</p>
                     <p class="lead">After select product please click on Add Product button.</p>
                 </div>
         
                 <div class="image-group">
-                    <p><b>3)</b> Product details:</p>
-                    <img src="" width="100%" alt="">
+                    <h5><b>3)</b> Product details:</h5>
                     <img src="assets/img/supplier-return/return-quantity.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">After clicked on Add Product button, You can see the details of the product.</p>
                     <p class="lead">Please, click on (+) or (-) button for how many items do you want to return.</p>
@@ -570,19 +616,57 @@
                 </div>
                 
                 <div class="image-group mt-4">
-                    <p class="title"><b>4)</b> Supplier returns list:</p>
+                    <h5><b>4)</b> Supplier returns list:</h5>
                     <img src="assets/img/supplier-return/supplier-return-list.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">After clicked on Submit button, you can see this supplier returns item in supplier return list on top position.</p>
                 </div>
         
                 <div class="image-group mt-4">
-                    <p class="title">3) Delete or view:</p>
+                    <h5><b>5)</b> Delete or view:</h5>
                     <img src="assets/img/supplier-return/add-delete.png" class="img-fluid border border-primary" alt=""><br><br>
                     <p class="lead">You can delete or view supplier return item from the action button.</p>
                 </div>
             </section>
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <!-- Reports -->
+            <!-- Reports -->
+            <section id="reports">
+                <h3 class="mt-4">Reports</h3>
+                <div class="image-group">
+                    <h5 class="mt-4">Finance Report</h5>
+                    <img src="assets/img/reports/1.jpg" class="img-fluid border border-primary" alt=""><br><br>
+                    <p class="lead"><b>A) Opening Stock:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>B) Purchase:</b> This is Total Purchase amount.</p>
+                    <p class=lead><b>C) Purchase Discount:</b> Purchase Discount is not generating.</p>
+                    <p class=lead><b>D) Cost of Goods Sold:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>E) VAT Expense:</b> This is total VAT Expense on Purchase.</p>
+                    <p class=lead><b>F) Total Expense:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>G) Closing Stock:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>H) Gross Sell:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>I) Discount:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>J) VAT:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>K) Shipping/Delivery Charge:</b> This is Opening Stock amount.</p>
+                    <p class=lead><b>L) Net Sells:</b> This is Opening Stock amount.</p>
+                </div>
+            </section>
+            <!-- support -->
+            <div class="line"></div>
+            <div class="line"></div>
+            <section id="support">
+                <h3>Support</h3>
+                <p class="lead">
+                    If you will need any hlep and support please feel free to email us, we will be happy to assist you.<br>
+                    Email: <a class="text-info" href="mailto:info@equation-it.com">info@equation-it.com</a> <br>Mob: +8801712501289 
+                </p>
+            </section>
+
+            
         </div>
     </div>
+
+    <button onclick="topFunction()" id="to-top" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -598,6 +682,25 @@
                 $(this).toggleClass('active');
             });
         });
+        //Get the button
+        var mybutton = document.getElementById("to-top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
