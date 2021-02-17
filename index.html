@@ -9,7 +9,7 @@
     <title>EquationPOS Documentation</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -188,8 +188,196 @@
                 <div class="line"></div>
 
                 <h2>Server Recommendation</h2>
-
+                <ul class="installation-requirements mt-5">
+                    <li>Equation POS can be installed in Localhost.</li>
+                    <li>If you want to make it accessible online- We recommend using Cloud host – as it provides better flexibility or control of the server. You can use AWS or Digital Ocean or search for some others. Our demo site is set up on the Digital Ocean.</li>
+                    <li>You can also use Shared hosting. Like for example BigRocks, NameCheap, GoDaddy etc.</li>
+                </ul>
+                
+                <h2 class="mt-5">STEPS TO INSTALLING POS SYSTEM</h2>
+                <ol class="downloading-process mt-5">
+                    <li>After downloading, extract the file onto your desktop using a zip software (like winzip or winrar or something else ) as shown below.</li>
+                    <li><span class="font-weight-bold"> In case you want to install the system locally, here are the steps:</span>
+                        <ul>
+                            <li><strong>2.1 </strong> Download & Install a server like WAMP(for Windows) or XAMP(for windows or Linux) or something else as per your preference having Apache or nginx server.</li>
+                            <li><strong>2.2 </strong>Go to the htdocs folder.  htdocs folder is commonly present inside the xamp/htdocs.</li>
+                            <li><strong>2.3 </strong>Copy the codebase folder (For example EquationPOS-V1.0.0) present inside the unzipped file in step 1.</li>
+                            <li><strong>2.4 </strong>Rename the folder to EquationPOS. (For example: EquationPOS-V1.0.0 to EquationPOS)</li>
+                            <li><strong>2.5 </strong>Now open http://localhost/EquationPOS/install or http://localhost/EquationPOS/public/install
+                                Here you will see a screen with “Doing some pre-installation checkup…”</li>
+                            <li><strong>2.6 </strong>Make sure all checks are shows as Green-Tick. If there is something with Red-Cross then fix it and refresh the page to check again. After all Green-Tick click on “Go to Next Step”</li>
+                            <li><strong>2.7 </strong>Follow the installation instructions as displayed in the screen.</li>
+                            <li><strong>2.8 </strong>After all installation is done, Go inside public folder and delete the install folder present.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-weight-bold"> In case you want to install the system in hosting, here are the steps:</span>
+                        <ul>
+                            <li><strong class="text-danger">3.0 </strong> Make sure the URL of application is like <u>www.yourwebsite.com</u> or <u>any-subdomain.yourwebsite.com </u> for better experience. Installing in folders like www.yourwebsite.com/any-folder-name/pos is not recommended.</li>
+                            <li><strong>3.1 </strong>Upload the extracted POS zip file (all files & folders inside EquationPOS-V1.0.0) in the server document root.
+                            <ul>
+                                <li style="list-style-type:square">To upload the file you can use FTP client like filezilla (https://filezilla-project.org/)</li>
+                                <li style="list-style-type:square">Or you can upload it directly by logging into your cPanel (or direct admin) & going to file manager.</li>
+                            </ul>
+                            </li>
+                            <li><strong>3.3 </strong>Open your website http://your-pos-website.com/install or http://your-pos-website.com/public/install.</li>
+                            <li><strong>3.4 </strong>Make sure all shows a Green-Tick. If there is something with Red-Cross then fix it and refresh the page to check again. After all Green-Tick click on “Go to Next Step”.</li>
+                            <li><strong>3.5 </strong>Follow the installation instructions as displayed in screen.</li>
+                            <li><strong>3.6 </strong>You will see the installation page as given below or if shows some error then check debugging errors notes given below.</li>
+                            <li><strong>3.7 </strong>After all installation is done, Go inside public folder and delete the install folder present.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="line"></div>
+                    <h1 class="text-danger">Under construction</h1>
+                <div class="line"></div>
             </div>
+
+            <!-- Product Manager Part -->
+
+            <section id="product-manager">
+                <h2>Product Manager</h2>
+                <h4 class="mt-5">Add New Product</h4>
+                <h6 class="font-weight-bold mt-4">How to add a new product ? <span style="font-size: 30px;">&#128580;</span></h6>
+                <img src="assets/img/add-product/page.jpg" class="img-fluid border border-primary mt-4" alt="">
+                <h5 class="mt-5">Step 01: Go to – Settings > Add Products.</h5>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/product-name.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>1) Add Product Name:</strong> Add Product Name in this field. This field is required. The Product Name field must be at least 3 characters.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/unit.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>2) Unit:</strong> Add product Unit name in this field, Ex: Piece, Dozen etc. This field is required. The product Unit field must be at least 2 characters.</p>
+                    <p><strong>NOTE: </strong>You can add a new unit from this page. Just clik on <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> icon.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/category.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>3) Category:</strong> Add Category of product in this field. This field is NOT required. The Category field must be at least 2 characters. Sub-Category can be added under the parent Category.</p>
+                    <p><strong>NOTE: </strong>You can add a new category from this page. Just clik on <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> icon.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/sku.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>4) SKU:</strong> Add a unique SKU(Stock-keeping unit) which will be used to identify the product. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/barcode-type.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>5) Barcode Type:</strong> Select Barcode Type from this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/brand.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>6) Brand:</strong> Select Brand of product from this field. This field is NOT required. The Brand field must be at least 2 characters.</p>
+                    <p><strong>NOTE: </strong>You can add a new brand from this page. Just clik on <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> icon.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/weight.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>7) Weight:</strong> Add Weight of product in this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/inventory-control.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>8) Inventory Control:</strong> Check Inventory Control field if prevent selling when Product is out of stock and get Alert Stock Quantity. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/alert-stock-quantity.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>9) Alert Stock Quantity:</strong> Fill up Alert Stock Quantity number in this field. User will get an alert once the Stock Quantity will be same to this number. This field is required if "Inventory Control" is checked.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/cost-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>10) Cost Price (Cost of Goods Sold):</strong> Add Cost Price of Product in this field. This field is NOT required. This Price is without VAT. But if this field is filled up than this price will be shown in new Purchase Order's price field.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/add-vat.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>11) Add VAT:</strong> Add VAT of Product Purchased in this field. If Product has VAT then checked the check box to put the VAT percentage. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/net-cost-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>12) Net Cost Price:</strong> Net Cost Price will be automatically calculated after VAT(if have) from Cost Price. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/profit-margin.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>13) Profit Margin(%):</strong> This field will show the Percentage of Profit Margin. Also user can set Profit Margin by this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/gross-selling-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>14) Gross Selling Price:</strong> User can set Gross Selling Price in this field or it will be automatically calculated based on Net Cost Price & Profit Margin(%). This price will be shown in POS product list as actual price of product if this has no Discount. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/add-discount.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>15) Add Discount:</strong> User can set individual Product Discount in this field. To add Discount first checked the check box than select the Discount type (Fixed or Percentage) from dropdown. It will effect the Gross Selling Price in the POS product list. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/selling-price-after-discount.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>16) Selling Price After Discount:</strong> If product has discount than this field will show the Product selling price after dedcuting the discount. And this price will be shown in the POS product list as actual price of product and "Gross Selling Price" will be crossed. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/add-vat.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>17) Add VAT:</strong> Add VAT of Selling Product in this field. If Product has VAT then checked the check box to put the VAT percentage. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/net-selling-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>18) Net Selling Price:</strong> This price will be automatically calculated after Discount and VAT on Gross Selling Price. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/description.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>19) Description:</strong> Add Product details descripton in this field. This description will be shown on E-commerce Product page. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/short-description.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>20) Product Short Description:</strong> Add Product Product Short Description in this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/upload-image.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>21) Upload Image:</strong> Upload image of product in this field. Recommended Image Dimension : 500px X 500px and Size : Max 1 MB. This field is NOT required.</p>
+                </div>
+
+                <h5 class="mt-5">Step 02: Click on -> Create new product.</h5>
+            </section>
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <!-- Purchase -->
+
+            <section id="product-manager">
+                <h2>Purchase</h2>
+                <h4 class="mt-5">Add New Purchase</h4>
+                <h6 class="font-weight-bold mt-4">How to add a new purchase order? <span style='font-size:30px;'>&#129300;</span></h6>
+                <p class="lead text-primary">Please follow our instruction. I hope you can do it easily!</p>
+                <b>Let's start &#129299;</b>
+                <img src="assets/img/add-purchase-order/page.jpg" class="img-fluid border border-primary mt-4" alt="">
+                <h5 class="mt-5">Step 01: Go to – Inventory > Add Purchase Order.</h5>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-purchase-order/supplier-name.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>1) Supplier Name:</strong> Select Supplier Name of Product from this field. This field is required. Only Products which are added under this supplier will be shown in "Product Search" field.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-purchase-order/purchase-order-number.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>2) Purchase Order Number:</strong> Put a Purchase Order Number in this field. This field is required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-purchase-order/date.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark lead mt-3"><strong>3) Date:</strong> Select Purchase Order date in this field. This field is required.</p>
+                </div>
+                <h4 class="mt-5">Add product( Which is you want buy ).</h4>
+                <img src="assets/img/add-purchase-order/add-product.jpg" class="img-fluid border border-primary" alt=""><br><br><br>
+                <p><b>A)</b> Add Products from selected supplier in this field. This field is required.</p>
+                <p><b>B)</b> This column will show the Serial Number of Products.</p>
+                <p><b>C)</b> This column will show the Name of Products.</p>
+                <p><b>D)</b> User can add Order Quantity of individual Product in this field. This field is required.</p>
+                <p><b>E)</b> This Unit Cost of individual Product is generated from "Cost Price (Cost of Goods Sold)" field of "Add New Product" page, but user can add/change it here. This field is required.</p>
+                <p><b>F)</b> This column will show the Total Cost (Order Quantity x Unit Cost) of individual Product.</p>
+                <p><b>G)</b> User can set individual Product Discount in this field.  This field is NOT required.</p>
+                <p><b>H)</b> This column will show the Discount Amount of individual Product.</p>
+                <p><b>I)</b> This column will show the Cost After Discount of individual Product.</p>
+                <p><b>J)</b> User can set VAT Percent of individual Product in this field. This field is NOT required.</p>
+                <p><b>K)</b> This column will show the VAT Amount of individual Product.</p>
+                <p><b>L)</b> This column will show the Cost After VAT of individual Product.</p>
+                <p><b>M)</b> User can set the Expiry Date of individual Product in this field. This field is NOT required.</p>
+                <p><b>N)</b> User can set the Lot / Batch No. of individual Product in this field. This field is NOT required.</p>
+                <p><b>O)</b> User can remove an individual Product from this action column.</p>
+                <p><b>P)</b> This column will show the Total Amount of all selected Products after DEDUCTING individual Product Discount and ADDING individual Product VAT.</p>
+                <p><b>Q)</b> User can set bulk Discount on all Products in this field. This field is NOT required.</p>
+                <p><b>R)</b> This column will show the Purchase Total of all selected Products after DEDUCTING individual Product Discount, ADDING individual Product VAT and DEDUCTING bulk Product Discount.</p>
+
+                <h5 class="mt-5">Step 02: Click on -> Create new product.</h5>
+            </section>
         </div>
     </div>
 
