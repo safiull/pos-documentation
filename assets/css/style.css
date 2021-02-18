@@ -74,6 +74,10 @@ a, a:hover, a:focus {
     overflow: scroll;
 }
 
+.active a{
+    color: red !important;
+}
+
 #sidebar.active {
     margin-left: -250px;
     transform: rotateY(120deg);

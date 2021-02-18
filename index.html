@@ -48,6 +48,23 @@
                     </ul>
                 </li>
                 <li>
+                    <a href="#supplierSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Product Manager</a>
+                    <ul class="collapse list-unstyled" id="supplierSubmenu">
+                        <li>
+                            <a href="#supplier">Add supplier</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit supplier</a>
+                        </li>
+                        <li>
+                            <a href="#">Suspend supplier</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete supplier</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Product Manager</a>
                     <ul class="collapse list-unstyled" id="productSubmenu">
                         <li>
@@ -119,6 +136,40 @@
                     </ul>
                 </li>
                 <li>
+                    <a href="#ExpenseCategorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Expense Category</a>
+                    <ul class="collapse list-unstyled" id="ExpenseCategorySubmenu">
+                        <li>
+                            <a href="#expense-category">Add expense category</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit expense category</a>
+                        </li>
+                        <li>
+                            <a href="#">Suspend expense category</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete expense category</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#RoleManagerSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Role manager</a>
+                    <ul class="collapse list-unstyled" id="RoleManagerSubmenu">
+                        <li>
+                            <a href="#role-manager">Add Role</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Role</a>
+                        </li>
+                        <li>
+                            <a href="#">Suspend Role</a>
+                        </li>
+                        <li>
+                            <a href="#">Delete Role</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#purchaseSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Purchases</a>
                     <ul class="collapse list-unstyled" id="purchaseSubmenu">
                         <li>
@@ -132,9 +183,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#recive-order"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Recived order</a>
-                </li>
+                
                 <li>
                     <a href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Payments</a>
                     <ul class="collapse list-unstyled" id="paymentSubmenu">
@@ -145,6 +194,9 @@
                             <a href="#">View payment</a>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="#recive-order"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Recived order</a>
                 </li>
                 <li>
                     <a href="#SalesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Sales / Sell (POS)</a>
@@ -293,6 +345,107 @@
                     <h1 class="text-danger">Under construction</h1>
                 <div class="line"></div>
             </div>
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <!-- Product Manager Part -->
+
+            <section id="supplier">
+                <h2>Product Manager</h2>
+                <h4 class="mt-5">Add New Product</h4>
+                <h6 class="font-weight-bold mt-4">How to add a new product ? <span style="font-size: 30px;">&#128580;</span></h6>
+                <img src="assets/img/add-product/page.jpg" class="img-fluid border border-primary mt-4" alt="">
+                <h5 class="mt-5">Step 01: Go to – Settings > Add Products.</h5>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/product-name.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>1) Add Product Name:</strong> Add Product Name in this field. This field is required. The Product Name field must be at least 3 characters.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/unit.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>2) Unit:</strong> Add product Unit name in this field, Ex: Piece, Dozen etc. This field is required. The product Unit field must be at least 2 characters.</p>
+                    <p><strong>NOTE: </strong>You can add a new unit from this page. Just clik on <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> icon.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/category.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>3) Category:</strong> Add Category of product in this field. This field is NOT required. The Category field must be at least 2 characters. Sub-Category can be added under the parent Category.</p>
+                    <p><strong>NOTE: </strong>You can add a new category from this page. Just clik on <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> icon.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/sku.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>4) SKU:</strong> Add a unique SKU(Stock-keeping unit) which will be used to identify the product. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/barcode-type.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>5) Barcode Type:</strong> Select Barcode Type from this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/brand.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>6) Brand:</strong> Select Brand of product from this field. This field is NOT required. The Brand field must be at least 2 characters.</p>
+                    <p><strong>NOTE: </strong>You can add a new brand from this page. Just clik on <i class="fa fa-plus-circle text-primary" aria-hidden="true"></i> icon.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/weight.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>7) Weight:</strong> Add Weight of product in this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/inventory-control.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>8) Inventory Control:</strong> Check Inventory Control field if prevent selling when Product is out of stock and get Alert Stock Quantity. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/alert-stock-quantity.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>9) Alert Stock Quantity:</strong> Fill up Alert Stock Quantity number in this field. User will get an alert once the Stock Quantity will be same to this number. This field is required if "Inventory Control" is checked.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/cost-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>10) Cost Price (Cost of Goods Sold):</strong> Add Cost Price of Product in this field. This field is NOT required. This Price is without VAT. But if this field is filled up than this price will be shown in new Purchase Order's price field.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/add-vat.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>11) Add VAT:</strong> Add VAT of Product Purchased in this field. If Product has VAT then checked the check box to put the VAT percentage. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/net-cost-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>12) Net Cost Price:</strong> Net Cost Price will be automatically calculated after VAT(if have) from Cost Price. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/profit-margin.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>13) Profit Margin(%):</strong> This field will show the Percentage of Profit Margin. Also user can set Profit Margin by this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/gross-selling-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>14) Gross Selling Price:</strong> User can set Gross Selling Price in this field or it will be automatically calculated based on Net Cost Price & Profit Margin(%). This price will be shown in POS product list as actual price of product if this has no Discount. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/add-discount.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>15) Add Discount:</strong> User can set individual Product Discount in this field. To add Discount first checked the check box than select the Discount type (Fixed or Percentage) from dropdown. It will effect the Gross Selling Price in the POS product list. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/selling-price-after-discount.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>16) Selling Price After Discount:</strong> If product has discount than this field will show the Product selling price after dedcuting the discount. And this price will be shown in the POS product list as actual price of product and "Gross Selling Price" will be crossed. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/add-vat.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>17) Add VAT:</strong> Add VAT of Selling Product in this field. If Product has VAT then checked the check box to put the VAT percentage. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/net-selling-price.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>18) Net Selling Price:</strong> This price will be automatically calculated after Discount and VAT on Gross Selling Price. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/description.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>19) Description:</strong> Add Product details descripton in this field. This description will be shown on E-commerce Product page. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/short-description.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>20) Product Short Description:</strong> Add Product Product Short Description in this field. This field is NOT required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/add-product/upload-image.jpg" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>21) Upload Image:</strong> Upload image of product in this field. Recommended Image Dimension : 500px X 500px and Size : Max 1 MB. This field is NOT required.</p>
+                </div>
+
+                <h5 class="mt-5">Step 02: Click on -> Create new product.</h5>
+            </section>
 
             <div class="line"></div>
             <div class="line"></div>
@@ -472,6 +625,65 @@
                 </div>
 
                 <h5 class="mt-5">Step 02: Click on -> Create New Category BUTTON.</h5>
+            </section> 
+
+            <div class="line"></div>
+            <div class="line"></div> 
+
+            <!-- Expense category -->
+            <section id="expense-category">
+                <h2>Expense category</h2>
+                <h4 class="mt-5">Add Expense Category</h4>
+                <h6 class="font-weight-bold mt-4">How to add a new expense category ? <span style="font-size: 30px;">&#128529;</span></h6>
+                <b>Let's start &#129299;</b>
+                <h5 class="mt-5">Step 01: Go to – Settings > Expense Category</h5>
+                <p>Then you can see this page. &#128071;</p>
+                <img src="assets/img/expense-category/expese-category-list.png" class="img-fluid border border-primary mt-4" alt="">
+                
+                <div class="img-group mt-5">
+                    <p>Click on ADD button for add new Expense Category.</p>
+                    <p>After clicked you can see this window. &#128071;</p>
+                    <img src="assets/img/expense-category/add-expense-category.png" class="img-fluid border border-primary" alt="">
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/expense-category/expense-category-name.png" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>1) Expense category name:</strong> Add Expense Category Name in this field. This field is required.</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/expense-category/expense-category-description.png" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>2) Expense Category description:</strong> Add Expense Category description in this field. This field is NOT required.</p>
+                </div>
+
+                <h5 class="mt-5">Step 02: Click on -> Submit BUTTON.</h5>
+            </section> 
+
+            <div class="line"></div>
+            <div class="line"></div> 
+
+            <!-- Role manager -->
+            <section id="role-manager">
+                <h2>Role manager</h2>
+                <h4 class="mt-5">Add Role</h4>
+                <h6 class="font-weight-bold mt-4">How to add a new Role ? <span style="font-size: 30px;">&#128534;</span></h6>
+                <h5 class="mt-5">Step 01: Go to – Settings > Role manager</h5>
+                <p>Then you can see this page. &#128071;</p>
+                <img src="assets/img/role-manager/role-page.png" class="img-fluid border border-primary mt-4" alt="">
+                
+                <div class="img-group mt-5">
+                    <p>Click on ADD button for add new Role.</p>
+                    <p>After clicked you can see this window. &#128071;</p>
+                    <img src="assets/img/role-manager/add-role-page.png" class="img-fluid border border-primary" alt="">
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/role-manager/role-name.png" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>1) Role name:</strong> Add Role Name in this field. This field is required. The Role name field must be at least 2 characters</p>
+                </div>
+                <div class="img-group mt-5">
+                    <img src="assets/img/role-manager/role-description.png" class="img-fluid border border-primary" alt="">
+                    <p class="text-dark mt-3"><strong>2) Role description:</strong> Add Role description in this field. This field is NOT required.</p>
+                </div>
+
+                <h5 class="mt-5">Step 02: Click on -> Submit BUTTON.</h5>
             </section> 
 
             <div class="line"></div>
@@ -755,7 +967,6 @@
                     Email: <a class="text-info" href="mailto:info@equation-it.com">info@equation-it.com</a> <br>Mob: +8801712501289 
                 </p>
             </section>
-
             
         </div>
     </div>
