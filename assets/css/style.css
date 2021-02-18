@@ -61,17 +61,23 @@ a, a:hover, a:focus {
 
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 280px;
+    max-width: 280px;
     background: #7386D5;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
+    height: 200vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: scroll;
 }
 
 #sidebar.active {
     margin-left: -250px;
-    transform: rotateY(100deg);
+    transform: rotateY(120deg);
 }
 
 

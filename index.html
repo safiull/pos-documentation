@@ -139,7 +139,7 @@
                     <a href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Payments</a>
                     <ul class="collapse list-unstyled" id="paymentSubmenu">
                         <li>
-                            <a href="#">Add payment</a>
+                            <a href="#payments">Add payment</a>
                         </li>
                         <li>
                             <a href="#">View payment</a>
@@ -150,7 +150,7 @@
                     <a href="#SalesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Sales / Sell (POS)</a>
                     <ul class="collapse list-unstyled" id="SalesSubmenu">
                         <li>
-                            <a href="#">Pos(Add sale)</a>
+                            <a href="#add-sale">Pos(Add sale)</a>
                         </li>
                         <li>
                             <a href="#">View sale</a>
@@ -518,7 +518,7 @@
                     <p><b>R)</b> This column will show the Purchase Total of all selected Products after DEDUCTING individual Product Discount, ADDING individual Product VAT and DEDUCTING bulk Product Discount.</p>
                 </div>
                 <!-- add-payment -->
-                <div class="add-payment">
+                <div id="payments" class="payments">
                     <h5 class="mt-5">5) Payment:</h5>
                     <img src="assets/img/add-purchase-order/payment.jpg" class="img-fluid border border-primary" alt=""><br><br><br>
                     <p><b>A)</b> Add Amount which user want to pay to supplier in this field. This field is NOT required.</p>
@@ -595,7 +595,7 @@
             <div class="line"></div>
             <!-- POS -->
             <!-- POS -->
-            <section id="pos">
+            <section id="add-sale">
                 <h3>POS</h3>
                 <div class="image-group">
                     <img src="assets/img/pos/1.jpg" class="img-fluid border border-primary mt-4" alt=""><br><br>
