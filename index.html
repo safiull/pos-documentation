@@ -28,7 +28,7 @@
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header sticky-top">
                 <!-- <img class="img-fluid" src="img/logo.png" alt=""> -->
                 <h3>Equation POS</h3>
             </div>
@@ -41,7 +41,13 @@
                     <a href="#installingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-folder-open-o px-1" aria-hidden="true"></i> Get started</a>
                     <ul class="collapse list-unstyled" id="installingSubmenu">
                         <li>
-                            <a href="#installing">Installing equationPOS</a>
+                            <a href="#requirements">Requirements</a>
+                        </li>
+                        <li>
+                            <a href="#installation">Installation</a>
+                        </li>
+                        <li>
+                            <a href="#database-connection">Database Connection</a>
                         </li>
                     </ul>
                 </li>
@@ -282,52 +288,11 @@
         <!-- Page Content Holder -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#product-manager">Add product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#supplier">Add Supplier</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#print-label">Product label</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#purchase">Add purchase</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#add-user">Add User</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#report">Reports</a>
-                            </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#support">Support</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
             <section id="home">
-                <p><b>Equation POS</b> is a POS (Point of Sale) of Equation IT. This is the most latest and user friendly POS (Point of Sale) in Bangladesh. We have both online and offline version to get easy access from anywhere of the world.</p>
+                <p><b>Equation POS</b> is a POS (Point of Sale) of Equation IT. This is the most latest and user friendly POS (Point of Sale) in the world. We have both online and offline version to get easy access from anywhere of the world.</p>
                 <br>
                 <p>User can add products, create purchase orders, receive products in inventory and sell products. It will show the accurate results/data to help you to take right decision on right time which will increase the possibility of success of your business.</p>
                 <br>
-                <p>We have developed a new module for Social Media. In this module user can create orders which they get from their Social Media comments/message. They can add customer details, address and delivery option there. Also user can check the order status, Ex: a) Need to prepare, b) Ready to deliver, c) On the way, d) Delivered, e) Order completed, to take right decision in time.</p>
                 <br>
                 <h4>Help</h4>
                 <p>
@@ -339,7 +304,7 @@
             <div class="line"></div>
             <div class="line"></div>
             
-            <div id="installing">
+            <div id="requirements">
                 <h2>Installing equationPOS</h2>
                 <h2 class="font-weight-bold mt-4">Server requirements</h2>
                 <p class="mt-4">Make sure your server meets the following requirements:</p>
@@ -373,34 +338,202 @@
                             <li><strong>2.2 </strong>Go to the htdocs folder.  htdocs folder is commonly present inside the xamp/htdocs.</li>
                             <li><strong>2.3 </strong>Copy the codebase folder (For example EquationPOS-V1.0.0) present inside the unzipped file in step 1.</li>
                             <li><strong>2.4 </strong>Rename the folder to EquationPOS. (For example: EquationPOS-V1.0.0 to EquationPOS)</li>
-                            <li><strong>2.5 </strong>Now open http://localhost/EquationPOS/install or http://localhost/EquationPOS/public/install
-                                Here you will see a screen with “Doing some pre-installation checkup…”</li>
-                            <li><strong>2.6 </strong>Make sure all checks are shows as Green-Tick. If there is something with Red-Cross then fix it and refresh the page to check again. After all Green-Tick click on “Go to Next Step”</li>
-                            <li><strong>2.7 </strong>Follow the installation instructions as displayed in the screen.</li>
-                            <li><strong>2.8 </strong>After all installation is done, Go inside public folder and delete the install folder present.</li>
-                        </ul>
-                    </li>
-                    <li><span class="font-weight-bold"> In case you want to install the system in hosting, here are the steps:</span>
-                        <ul>
-                            <li><strong class="text-danger">3.0 </strong> Make sure the URL of application is like <u>www.yourwebsite.com</u> or <u>any-subdomain.yourwebsite.com </u> for better experience. Installing in folders like www.yourwebsite.com/any-folder-name/pos is not recommended.</li>
-                            <li><strong>3.1 </strong>Upload the extracted POS zip file (all files & folders inside EquationPOS-V1.0.0) in the server document root.
-                            <ul>
-                                <li style="list-style-type:square">To upload the file you can use FTP client like filezilla (https://filezilla-project.org/)</li>
-                                <li style="list-style-type:square">Or you can upload it directly by logging into your cPanel (or direct admin) & going to file manager.</li>
-                            </ul>
-                            </li>
-                            <li><strong>3.3 </strong>Open your website http://your-pos-website.com/install or http://your-pos-website.com/public/install.</li>
-                            <li><strong>3.4 </strong>Make sure all shows a Green-Tick. If there is something with Red-Cross then fix it and refresh the page to check again. After all Green-Tick click on “Go to Next Step”.</li>
-                            <li><strong>3.5 </strong>Follow the installation instructions as displayed in screen.</li>
-                            <li><strong>3.6 </strong>You will see the installation page as given below or if shows some error then check debugging errors notes given below.</li>
-                            <li><strong>3.7 </strong>After all installation is done, Go inside public folder and delete the install folder present.</li>
                         </ul>
                     </li>
                 </ol>
-                <div class="line"></div>
-                    <h1 class="text-danger">Under construction</h1>
-                <div class="line"></div>
             </div>
+
+            <div id="installation">
+                <h2>Installation</h2>
+                <p>Given below are the steps you need to follow to install the equationPOS on your system:</p>
+                <br>
+                <h3>Guide</h3><hr>
+                <p><b>Step 1:</b> Open the terminal in your root directory(equationPOS) & to install the composer packages, run the following command:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">composer install</div>
+                <br>
+                <br>
+                <p><b>Step 2:</b> In the root directory, you will find a file named <b>.env.example</b> rename the given file name to <b>.env</b> and run the following command to generate the key (and you can also edit your data base credentials here)</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">php artisan key:generate</div>
+                <br>
+                <br>
+                <p><b>Step 3:</b> By running the following command, you will be able to get all the dependencies in your node_modules folder:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <span class="text-muted d-block"># For Yarn</span>
+                    <p>yarn</p>
+                    <span class="d-block text-muted"># For npm</span>
+                    <p>npm install</p>
+                </div>
+                <br>
+                <br>
+                <p><b>Step 4:</b> To run the project you need to run following command in the project directory. It will compile the vue files & all the other project files. If you are making any changes in any of the .vue file then you need to run the given command again.</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <span class="text-muted d-block"># For Yarn</span>
+                    <p>yarn dev</p>
+                    <span class="d-block text-muted"># For npm</span>
+                    <p>npm run dev</p>
+                </div>
+                <br>
+                <br>
+                <p><b>Step 5:</b> To serve the application you need to run the following command in the project directory. (This will give you an address with port number 8000)</p>
+                <p>Now navigate to the given address you will see your application is running.</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    php artisan serve
+                </div>  
+                <br>
+                <br>
+                <p>To change the port address, run the following command:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p>php artisan serve --port=8080    // For port 8080</p>
+                    <p>sudo php artisan serve --port=80 // If you want to run it on port 80, you probably need to sudo.
+                    </p>
+                </div> 
+                <br>
+                <br>
+                <p><b>Watching for changes:</b> Running npm run dev every time you make changes to file is inefficient. Hopefully there's command so your changes can be watched and get reflected accordingly.</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <span class="text-muted d-block"># For Yarn</span>
+                    <p>yarn watch</p>
+                    <span class="d-block text-muted"># For npm</span>
+                    <p>npm run watch</p>
+                </div>
+                <br>
+                <br>
+                <p><b>Building for Production:</b> If you want to run the project and make the build in the production mode then run the following command in the root directory, otherwise the project will continue to run in the development mode.</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <span class="text-muted d-block"># For Yarn</span>
+                    <p>yarn prod</p>
+                    <span class="d-block text-muted"># For npm</span>
+                    <p>npm run prod</p>
+                </div>
+                <br>
+                <h5>Required Permissions</h5>
+                <br>
+                <p>If you are facing any issues regarding the permissions, then you need to run the following command in your project directory:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p>sudo chmod -R o+rw bootstrap/cache</p>
+                    <p>sudo chmod -R o+rw storage</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="database-connection">
+                <h2>Database Connection</h2>
+                <p>Following are some database connection possibilities. It's not mandatory to use one of them but given for demo purpose.</p>
+                <h3>For SQLite</h3>
+                <hr>
+                <br>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="text-muted">#create database</p>
+                    <p>touch database/database.sqlite</p>
+                </div>
+                <br>
+                <p>Copy file ".env.example", and change its name to ".env". Then in file ".env" replace this database configuration:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <span class="d-block">DB_CONNECTION=mysql</span>
+                    <span class="d-block">DB_HOST=127.0.0.1</span>
+                    <span class="d-block">DB_PORT=3306</span>
+                    <span class="d-block">DB_DATABASE=laravel</span>
+                    <span class="d-block">DB_USERNAME=root</span>
+                    <span class="d-block">DB_PASSWORD=</span>
+                </div>
+                <p>To this:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <span class="d-block">DB_CONNECTION=sqlite</span>
+                    <span class="d-block">DB_DATABASE=/path_to_your_project/database/database.sqlite</span>
+                </div>
+                <br>
+                <hr>
+                <h3>For PostgreSQL</h3>
+                <hr>
+                <br>
+                <p><b>Step 1:</b> Install PostgreSQL</p>
+                <br>
+                <p><b>Step 2:</b> Create user</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="mb-0">$ sudo -u postgres createuser --interactive</p>
+                    <p class="mb-0">enter name of role to add: laravel</p>
+                    <p class="mb-0">shall the new role be a superuser (y/n) n</p>
+                    <p class="mb-0">shall the new role be allowed to create da tabase (y/n) n</p>
+                    <p class="mb-0">shall the new role be allowed to create more new roles (y/n) n</p>
+                </div>
+                <br>
+                <p><b>Step 3:</b> Set user password</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="mb-0">$ sudo -u postgres psql</p>
+                    <p class="mb-0">postgres= ALTER USER laravel WITH ENCRYPTED PASSWORD 'password';</p>
+                    <p class="mb-0">postgres= \q</p>
+                </div>
+                <br>
+                <p><b>Step 4:</b> Create database</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="mb-0">sudo -u postgres createdb YOUR_DATABASE_NAME</p>
+                </div>
+                <br>
+                <p><b>Step 5:</b> Copy file ".env.example", and change its name to ".env". Then in file ".env" replace this database configuration:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="mb-0">DB_CONNECTION=mysql</p>
+                    <p class="mb-0">DB_HOST=127.0.0.1</p>
+                    <p class="mb-0">DB_PORT=3306</p>
+                    <p class="mb-0">DB_DATABASE=laravel</p>
+                    <p class="mb-0">DB_USERNAME=root</p>
+                    <p class="mb-0">DB_PASSWORD=</p>
+                </div>
+                <br>
+                <p>To this:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="mb-0">DB_CONNECTION=mysql</p>
+                    <p class="mb-0">DB_HOST=127.0.0.1</p>
+                    <p class="mb-0">DB_PORT=5432</p>
+                    <p class="mb-0">DB_DATABASE=YOUR_DATABASE_NAME</p>
+                    <p class="mb-0">DB_USERNAME=laravel</p>
+                    <p class="mb-0">DB_PASSWORD=password=</p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3>For MySQL</h3>
+                <p>Copy file ".env.example", and change its name to ".env". Then in file ".env" complete this database configuration:</p>
+                <div class="p-3 mb-2 rounded bg-dark text-light">
+                    <p class="mb-0">DB_CONNECTION=mysql</p>
+                    <p class="mb-0">DB_HOST=127.0.0.1</p>
+                    <p class="mb-0">DB_PORT=3306</p>
+                    <p class="mb-0">DB_DATABASE=YOUR_DATABASE_NAME</p>
+                    <p class="mb-0">DB_USERNAME=root</p>
+                    <p class="mb-0">DB_PASSWORD=</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <p>Create a new database in http://localhost/phpmyadmin/</p>
+            <p>Include this database name in <b>.env</b> file in DB_DATABASE variable.</p>
+            <br>
+            <h5>Now install this software in your local server.</h5>
+            <div class="p-3 mb-2 rounded bg-dark text-light">
+                <p class="text-muted">#Put this command in your command prompt for create all tabels</p>
+                <p>php artisan migrate:refresh --seed</p>
+            </div>
+            <p>This command will create two users</p>
+            <p>Now you need to install passport authentication.Put this command in your command prompt.</p>
+            <div class="p-3 mb-2 rounded bg-dark text-light">
+                <p>php artisan passport:install --force</p>
+            </div>
+            <p>If you want to know more about passport authentication, please click on this link <a href="https://laravel.com/docs/7.x/passport" class="text-danger">Laravel passport authentication</a></p>
+            <br>
+            
+            <li><span class="font-weight-bold"> In case you want to install the system in hosting, here are the steps:</span>
+                <ul>
+                    <li><strong class="text-danger">3.0 </strong> Make sure the URL of application is like <u>www.yourwebsite.com</u> or <u>any-subdomain.yourwebsite.com </u> for better experience. Installing in folders like www.yourwebsite.com/any-folder-name/pos is not recommended.</li>
+                    <li><strong>3.1 </strong>Upload the extracted POS zip file (all files & folders inside EquationPOS-V1.0.0) in the server document root.
+                        <ul>
+                            <li style="list-style-type:square">To upload the file you can use FTP client like filezilla (https://filezilla-project.org/)</li>
+                            <li style="list-style-type:square">Or you can upload it directly by logging into your cPanel (or direct admin) & going to file manager.</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </li>
 
             <div class="line"></div>
             <div class="line"></div>
